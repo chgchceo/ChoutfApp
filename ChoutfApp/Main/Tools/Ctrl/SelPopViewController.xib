@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelPopViewController">
+            <connections>
+                <outlet property="bgView" destination="8zD-Nv-w8o" id="Jgy-B3-jeo"/>
+                <outlet property="bottomBtn" destination="UUd-1s-bo7" id="qsO-FZ-Lk8"/>
+                <outlet property="topBtn" destination="rct-u9-lMu" id="zM6-5n-yQH"/>
+                <outlet property="view" destination="Jol-F4-lOC" id="97v-Zj-BsM"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Jol-F4-lOC">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_bg" translatesAutoresizingMaskIntoConstraints="NO" id="qXC-ht-SHu">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                </imageView>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8zD-Nv-w8o">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                    <color key="backgroundColor" red="0.0039215686274509803" green="0.0039215686274509803" blue="0.0039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rct-u9-lMu">
+                    <rect key="frame" x="91" y="264" width="240" height="240"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.4823529411764706" green="0.078431372549019607" blue="0.13725490196078433" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="icon_xiangce">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="topButtAc:" destination="-1" eventType="touchUpInside" id="q2y-X0-gOM"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUd-1s-bo7">
+                    <rect key="frame" x="693" y="264" width="240" height="240"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.4823529411764706" green="0.078431372549019607" blue="0.13725490196078433" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="icon_xiangji">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="bottomButtAc:" destination="-1" eventType="touchUpInside" id="pjr-xi-5x1"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="t36-2Z-Oxx"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="qXC-ht-SHu" firstAttribute="trailing" secondItem="t36-2Z-Oxx" secondAttribute="trailing" id="8G7-31-YAS"/>
+                <constraint firstItem="8zD-Nv-w8o" firstAttribute="leading" secondItem="t36-2Z-Oxx" secondAttribute="leading" id="8zY-Ds-FUq"/>
+                <constraint firstItem="qXC-ht-SHu" firstAttribute="leading" secondItem="t36-2Z-Oxx" secondAttribute="leading" id="bbU-FT-L6X"/>
+                <constraint firstItem="qXC-ht-SHu" firstAttribute="top" secondItem="Jol-F4-lOC" secondAttribute="top" id="fmD-gW-UX9"/>
+                <constraint firstItem="8zD-Nv-w8o" firstAttribute="trailing" secondItem="t36-2Z-Oxx" secondAttribute="trailing" id="kKB-JF-DHc"/>
+                <constraint firstItem="8zD-Nv-w8o" firstAttribute="top" secondItem="Jol-F4-lOC" secondAttribute="top" id="mxp-e3-Xv4"/>
+                <constraint firstAttribute="bottom" secondItem="qXC-ht-SHu" secondAttribute="bottom" id="pdS-pU-KJW"/>
+                <constraint firstAttribute="bottom" secondItem="8zD-Nv-w8o" secondAttribute="bottom" id="sfe-8X-8AF"/>
+            </constraints>
+            <point key="canvasLocation" x="137.48169838945827" y="19.3359375"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_bg" width="1934" height="1929"/>
+        <image name="icon_xiangce" width="80" height="80"/>
+        <image name="icon_xiangji" width="95" height="73"/>
+    </resources>
+</document>

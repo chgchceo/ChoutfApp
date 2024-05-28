@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BrightnessViewController">
+            <connections>
+                <outlet property="bgView" destination="E8W-0K-bXR" id="7p2-1E-sEt"/>
+                <outlet property="bottomButt" destination="EHc-ND-6o7" id="QBn-xG-NJU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="buttArr" destination="Yx2-2Z-DmJ" id="GGb-gq-A4d"/>
+                <outletCollection property="buttArr" destination="DAF-Kw-KWm" id="oMr-Jl-NGb"/>
+                <outletCollection property="buttArr" destination="inz-vb-UxA" id="6qP-Q9-RPb"/>
+                <outletCollection property="buttArr" destination="V4r-hC-41W" id="8yW-dk-XaH"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E8W-0K-bXR">
+                    <rect key="frame" x="120" y="181.66666666666663" width="135" height="304"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yx2-2Z-DmJ">
+                            <rect key="frame" x="0.0" y="0.0" width="135" height="60"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.1294117719" green="0.2823529541" blue="0.33333334329999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAF-Kw-KWm">
+                            <rect key="frame" x="0.0" y="61" width="135" height="60"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.1294117719" green="0.2823529541" blue="0.33333334329999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="inz-vb-UxA">
+                            <rect key="frame" x="0.0" y="122" width="135" height="60"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.1294117719" green="0.2823529541" blue="0.33333334329999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V4r-hC-41W">
+                            <rect key="frame" x="0.0" y="183" width="135" height="60"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.1294117719" green="0.2823529541" blue="0.33333334329999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EHc-ND-6o7">
+                            <rect key="frame" x="0.0" y="244" width="135" height="60"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.2588235438" green="0.50196081400000003" blue="0.54509806630000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="304" id="OvU-QG-NCi"/>
+                        <constraint firstAttribute="width" constant="135" id="dmP-1u-DxI"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-light" translatesAutoresizingMaskIntoConstraints="NO" id="nDS-Sn-Ety">
+                    <rect key="frame" x="168" y="58.666666666666657" width="39" height="52"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="52" id="Vbh-sb-42h"/>
+                        <constraint firstAttribute="width" constant="39" id="ttX-Yr-8te"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="E8W-0K-bXR" firstAttribute="top" secondItem="nDS-Sn-Ety" secondAttribute="bottom" constant="70.670000000000002" id="0gX-4J-g55"/>
+                <constraint firstItem="nDS-Sn-Ety" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="UhW-hz-RDg"/>
+                <constraint firstItem="E8W-0K-bXR" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Zb5-0n-O9o"/>
+                <constraint firstItem="E8W-0K-bXR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="jCo-UM-Tet"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="135.1145038167939" y="19.366197183098592"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon-light" width="128" height="128"/>
+    </resources>
+</document>

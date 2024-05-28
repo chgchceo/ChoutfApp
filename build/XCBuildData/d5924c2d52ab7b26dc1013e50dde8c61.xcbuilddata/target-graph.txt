@@ -1,0 +1,16 @@
+Target dependency graph (6 targets)
+Target 'ChoutfApp' in project 'ChoutfApp'
+➜ Implicit dependency on target 'Pods-ChoutfApp' in project 'Pods' via file 'libPods-ChoutfApp.a' in build phase 'Link Binary'
+➜ Implicit dependency on target 'AFNetworking' in project 'Pods' via options '-lAFNetworking' in build setting 'OTHER_LDFLAGS'
+➜ Implicit dependency on target 'MBProgressHUD' in project 'Pods' via options '-lMBProgressHUD' in build setting 'OTHER_LDFLAGS'
+➜ Implicit dependency on target 'SDWebImage' in project 'Pods' via options '-lSDWebImage' in build setting 'OTHER_LDFLAGS'
+➜ Implicit dependency on target 'TZImagePickerController' in project 'Pods' via options '-lTZImagePickerController' in build setting 'OTHER_LDFLAGS'
+Target 'Pods-ChoutfApp' in project 'Pods'
+➜ Explicit dependency on target 'AFNetworking' in project 'Pods'
+➜ Explicit dependency on target 'MBProgressHUD' in project 'Pods'
+➜ Explicit dependency on target 'SDWebImage' in project 'Pods'
+➜ Explicit dependency on target 'TZImagePickerController' in project 'Pods'
+Target 'TZImagePickerController' in project 'Pods' (no dependencies)
+Target 'SDWebImage' in project 'Pods' (no dependencies)
+Target 'MBProgressHUD' in project 'Pods' (no dependencies)
+Target 'AFNetworking' in project 'Pods' (no dependencies)

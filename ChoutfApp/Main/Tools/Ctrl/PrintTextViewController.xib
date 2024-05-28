@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PrintTextViewController">
+            <connections>
+                <outlet property="butt" destination="VSK-KY-0Yz" id="We3-La-INI"/>
+                <outlet property="textView" destination="M0O-Kf-0nn" id="MPu-sI-wW6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="请输入要打印的文本内容" translatesAutoresizingMaskIntoConstraints="NO" id="M0O-Kf-0nn">
+                    <rect key="frame" x="16" y="15" width="344" height="530"/>
+                    <color key="backgroundColor" systemColor="systemGray6Color"/>
+                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSK-KY-0Yz">
+                    <rect key="frame" x="15" y="575" width="345" height="44"/>
+                    <color key="backgroundColor" red="0.52549019610000003" green="0.14901960780000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="LZq-UJ-rAp"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="打印"/>
+                    <connections>
+                        <action selector="doneButtAc:" destination="-1" eventType="touchUpInside" id="E0L-Vh-QPc"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="M0O-Kf-0nn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="15" id="8x0-FO-sG2"/>
+                <constraint firstItem="M0O-Kf-0nn" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="16" id="L5D-u0-1hl"/>
+                <constraint firstItem="VSK-KY-0Yz" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="15" id="MfH-SK-GQE"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="VSK-KY-0Yz" secondAttribute="trailing" constant="15" id="Y34-CK-VTM"/>
+                <constraint firstItem="VSK-KY-0Yz" firstAttribute="top" secondItem="M0O-Kf-0nn" secondAttribute="bottom" constant="30" id="apw-9e-vNh"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="M0O-Kf-0nn" secondAttribute="trailing" constant="15" id="jm9-ER-NAI"/>
+                <constraint firstAttribute="bottom" secondItem="VSK-KY-0Yz" secondAttribute="bottom" constant="48" id="orr-Xq-Iz7"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="32.824427480916029" y="20.774647887323944"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
